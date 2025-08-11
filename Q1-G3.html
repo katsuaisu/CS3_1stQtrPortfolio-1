@@ -8,6 +8,7 @@
 <button onclick="printResults()"> Accept Input </button>
 
 <div id="out1"></div>
+<img src="https://www.inspiredtaste.net/wp-content/uploads/2019/10/Homemade-Apple-Pie-Recipe-6-1200.jpg" alt="Apple Pie">
 
 <script>
     function printResults()
@@ -18,7 +19,7 @@
         const serviceCharge = parseFloat(document.getElementById("Sprice").value);
 
         var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
-        out1.innerHTML = "Total Amont: Php " + total;
+        out1.innerHTML = "Total Amont: Php " + total.toFixed(2);
 
     }
 </script>

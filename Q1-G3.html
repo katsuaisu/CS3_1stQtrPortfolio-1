@@ -1,9 +1,9 @@
 <h1> Xian Elric Yu - III-K Aug. 11, 2025</h1>
 <h2> Third Graded Exercise - First Quarter</h2>
 
-<input id="in1" type="number" placeholder="Friend 1"> <br> 
-<input id="in2" type="number" placeholder="Friend 2"> <br>
-<input id="in3" type="number" placeholder="Friend 2"> <br>
+<input id="Mprice" type="number" placeholder="Meal Price"> <br> 
+<input id="Tip" type="number" placeholder="Tip Percentage"> <br>
+<input id="Sprice" type="number" placeholder="Service Charge"> <br>
 
 <button onclick="printResults()"> Accept Input </button>
 
@@ -13,9 +13,12 @@
     function printResults()
     {
 
-        var summy = (int1.value+int2.value+int3.value)
-        out1.innerHTML += summy;
+        const mealPrice = parseFloat(document.getElementById("Mprice").value);
+        const tip = parseFloat(document.getElementById("Tip").value);
+        const serviceCharge = parseFloat(document.getElementById("Sprice").value);
 
+        var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
+        out1.innerHTML = "Total Amont: Php " + total;
 
     }
 </script>

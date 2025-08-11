@@ -14,9 +14,9 @@
     function printResults()
     {
 
-        const mealPrice = parseFloat(document.getElementById("Mprice").value);
-        const tip = parseFloat(document.getElementById("Tip").value);
-        const serviceCharge = parseFloat(document.getElementById("Sprice").value);
+        mealPrice = parseFloat(document.getElementById("Mprice").value);
+        tip = parseFloat(document.getElementById("Tip").value);
+        serviceCharge = parseFloat(document.getElementById("Sprice").value);
 
         var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
         out1.innerHTML = "Total Amont: Php " + total.toFixed(2);

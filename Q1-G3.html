@@ -1,31 +1,33 @@
 <h1> Xian Elric Yu - III-K Aug. 14, 2025</h1>
 <h2> Third Graded Exercise - First Quarter</h2>
+<p>Guess the number! </p>
+<p>The number is from 1 to 100</p>
+<p>Enter your guess: </p> <input id="Guess" type="number"> <br> 
 
-<input id="Guess" type="number"> <br> 
 
+<button onclick="checkit()"> Confirm Guess! </button>
 
-<button onclick="printResults()"> Accept Input </button>
-
-<div id="out1"></div>
+<p id="out1"></p>
+<p id="out2"></p>
 
 <script>
 
     var Randy = Math.floor(Math.random()*101)
     function checkit()
     {
-        out1.innerhtml = "Result: ";
+        document.getElementById("out1").innerHTML = "Result: ";
         var numGuess = parseFloat(document.getElementById("Guess").value);
         if (numGuess>Randy)
             {
-                out1.innerhtml = "Lower";
+                document.getElementById("out2").innerHTML = "Lower";
             }
         if (numGuess==Randy)
             {
-                out1.innerhtml = "Yay you guessed it!";
+                document.getElementById("out2").innerHTML = "Yay you guessed it!";
             }
         if (numGuess<Randy)
             {
-                out1.innerhtml = "Higher";
+                document.getElementById("out2").innerHTML = "Higher";
             }
     }
 </script>

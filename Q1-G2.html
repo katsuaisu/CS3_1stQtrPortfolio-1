@@ -1,20 +1,25 @@
 <h1> Xian Elric Yu - III-K Aug. 11, 2025</h1>
 <h2> Second Graded Exercise - First Quarter</h2>
 
-<p> My friends are: </p>
+<input id="Mprice" type="number" placeholder="Meal Price"> <br> 
+<input id="Tip" type="number" placeholder="Tip Percentage"> <br>
+<input id="Sprice" type="number" placeholder="Service Charge"> <br>
 
-<input id="in1" type="text" placeholder="Friend 1"> <br> <!--so like theres type number and date too--> 
-<input id="in2" type="text" placeholder="Friend 2"> <br>
-
-<button onclick="printFriends()"> Show Friends </button>
+<button onclick="printResults()"> Accept Input </button>
 
 <div id="out1"></div>
-<img src="https://upload.wikimedia.org/wikipedia/en/f/f1/My_little_pony_friendship_is_magic_group_shot_r.png" alt="SillyFriends" width = "900" length = "1800">
+<img src="https://www.inspiredtaste.net/wp-content/uploads/2019/10/Homemade-Apple-Pie-Recipe-6-1200.jpg" alt="Apple Pie">
+
 <script>
-    function printFriends()
+    function printResults()
     {
-        out1.innerHTML + "<br>";
-        out1.innerHTML += in1.value + "<br>";
-        out1.innerHTML += in2.value + "<br>";
+
+        mealPrice = parseFloat(document.getElementById("Mprice").value);
+        tip = parseFloat(document.getElementById("Tip").value);
+        serviceCharge = parseFloat(document.getElementById("Sprice").value);
+
+        var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
+        out1.innerHTML = "Total Amont: Php " + total.toFixed(2);
+
     }
 </script>

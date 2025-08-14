@@ -1,0 +1,31 @@
+<h1> Xian Elric Yu - III-K Aug. 14, 2025</h1>
+<h2> Third Graded Exercise - First Quarter</h2>
+
+<input id="Guess" type="number"> <br> 
+
+
+<button onclick="printResults()"> Accept Input </button>
+
+<div id="out1"></div>
+
+<script>
+
+    var Randy = Math.floor(Math.random()*101)
+    function checkit()
+    {
+        out1.innerhtml = "Result: ";
+        var numGuess = parseFloat(document.getElementById("Guess").value);
+        if (numGuess>Randy)
+            {
+                out1.innerhtml = "Lower";
+            }
+        if (numGuess==Randy)
+            {
+                out1.innerhtml = "Yay you guessed it!";
+            }
+        if (numGuess<Randy)
+            {
+                out1.innerhtml = "Higher";
+            }
+    }
+</script>

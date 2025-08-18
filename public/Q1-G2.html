@@ -1,25 +1,31 @@
-<h1> Xian Elric Yu - III-K Aug. 11, 2025</h1>
-<h2> Second Graded Exercise - First Quarter</h2>
+<!DOCTYPE html>
+<html>
+<body>
 
-<input id="Mprice" type="number" placeholder="Meal Price"> <br> 
-<input id="Tip" type="number" placeholder="Tip Percentage"> <br>
-<input id="Sprice" type="number" placeholder="Service Charge"> <br>
+    <h2> Q1 2nd Graded Exercise Submitted By 9-Strontium Yu</h2>
 
-<button onclick="printResults()"> Accept Input </button>
+    <input id="Mprice" type="number" placeholder="Meal Price"> <br> 
+    <input id="Tip" type="number" placeholder="Tip Percentage"> <br>
+    <input id="Sprice" type="number" placeholder="Service Charge"> <br>
 
-<div id="out1"></div>
-<img src="https://www.inspiredtaste.net/wp-content/uploads/2019/10/Homemade-Apple-Pie-Recipe-6-1200.jpg" alt="Apple Pie">
+    <button onclick="totalMeal()"> Accept Input </button>
 
-<script>
-    function printResults()
-    {
+    <div id="out1"></div>
+    <img src="https://www.inspiredtaste.net/wp-content/uploads/2019/10/Homemade-Apple-Pie-Recipe-6-1200.jpg" alt="Apple Pie">
 
-        mealPrice = parseFloat(document.getElementById("Mprice").value);
-        tip = parseFloat(document.getElementById("Tip").value);
-        serviceCharge = parseFloat(document.getElementById("Sprice").value);
+    <script>
+        function totalMeal()
+        {
 
-        var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
-        out1.innerHTML = "Total Amount: Php " + total.toFixed(2);
+            mealPrice = parseFloat(document.getElementById("Mprice").value);
+            tip = parseFloat(document.getElementById("Tip").value);
+            serviceCharge = parseFloat(document.getElementById("Sprice").value);
 
-    }
-</script>
+            var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
+            out1.innerHTML = "Total Amount: Php " + total.toFixed(2);
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,5 +1,8 @@
-<h1> Xian Elric Yu - III-K Aug. 14, 2025</h1>
-<h2> Third Graded Exercise - First Quarter</h2>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2> Q1 3rd Graded Exercise submitted by 9-Strontium Yu</h2>
 <p>Guess the number! </p>
 <p>The number is from 1 to 100</p>
 <p>Enter your guess: </p> <input id="Guess" type="number"> <br> 
@@ -12,22 +15,25 @@
 
 <script>
 
-    var Randy = Math.floor(Math.random()*101)
+    var dNumber = Math.floor(Math.random()*100) + 1;
     function checkit()
     {
         document.getElementById("out1").innerHTML = "Result: ";
         var numGuess = parseFloat(document.getElementById("Guess").value);
-        if (numGuess>Randy)
+        if (numGuess>dNumber)
             {
                 document.getElementById("out2").innerHTML = "Lower";
             }
-        if (numGuess==Randy)
+        if (numGuess==dNumber)
             {
                 document.getElementById("out2").innerHTML = "Yay you guessed it!";
             }
-        if (numGuess<Randy)
+        if (numGuess<dNumber)
             {
                 document.getElementById("out2").innerHTML = "Higher";
             }
     }
 </script>
+
+</body>
+</html>

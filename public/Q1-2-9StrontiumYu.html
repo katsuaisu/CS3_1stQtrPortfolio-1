@@ -4,9 +4,12 @@
 
     <h2> Q1 2nd Graded Exercise Submitted By 9-Strontium Yu</h2>
 
-    <p1> Meal Price </p1><input id="Mprice" type="number" placeholder="Meal Price"> <br> 
-    <p1> Tip Percentage </p1><input id="Tip" type="number" placeholder="Tip Percentage"> <br>
-    <p1> Service Charge </p1><input id="Sprice" type="number" placeholder="Service Charge"> <br>
+    <p1> Meal Price </p1> 
+    <input id="Mprice" type="number" placeholder="Meal Price"> <br> 
+    <p1> Tip Percentage </p1> 
+    <input id="Tip" type="number" placeholder="Tip Percentage"> <br>
+    <p1> Service Charge </p1> 
+    <input id="Sprice" type="number" placeholder="Service Charge"> <br>
 
     <button onclick="totalMeal()"> Accept Input </button>
 
@@ -22,7 +25,7 @@
             serviceCharge = parseFloat(document.getElementById("Sprice").value);
 
             var total = mealPrice + (mealPrice * tip / 100) + serviceCharge;
-            out1.innerHTML = "Total Amount: Php " + total.toFixed(2);
+            out1.innerHTML = "Total Meal: Php " + total.toFixed(2);
 
         }
     </script>

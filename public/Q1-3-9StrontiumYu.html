@@ -2,38 +2,39 @@
 <html>
 <body>
 
-<h2> Q1 3rd Graded Exercise submitted by 9-Strontium Yu</h2>
-<p>Guess the number! </p>
-<p>The number is from 1 to 100</p>
-<p>Enter your guess: </p> <input id="Guess" type="number"> <br> 
+    <h2> Q1 3rd Graded Exercise submitted by 9-Strontium Yu</h2>
+
+    <p>Guess the number! </p>
+    <p>The number is from 1 to 100</p>
+    <p>Enter your guess: </p> <input id="Guess" type="number"> <br> 
 
 
-<button onclick="checkit()"> Confirm Guess! </button>
+    <button onclick="checkit()"> Confirm Guess! </button>
 
-<p id="out1"></p>
-<p id="out2"></p>
+    <p id="out1"></p>
+    <p id="out2"></p>
 
-<script>
+    <script>
 
-    var dNumber = Math.floor(Math.random()*100) + 1;
-    function checkit()
-    {
-        document.getElementById("out1").innerHTML = "Result: ";
-        var numGuess = parseFloat(document.getElementById("Guess").value);
-        if (numGuess>dNumber)
-            {
-                document.getElementById("out2").innerHTML = "Lower";
-            }
-        if (numGuess==dNumber)
-            {
-                document.getElementById("out2").innerHTML = "Yay you guessed it!";
-            }
-        if (numGuess<dNumber)
-            {
-                document.getElementById("out2").innerHTML = "Higher";
-            }
-    }
-</script>
+        var dNumber = Math.floor(Math.random()*100) + 1;
+        function checkit()
+        {
+            document.getElementById("out1").innerHTML = "Result: ";
+            var numGuess = parseFloat(document.getElementById("Guess").value);
+            if (numGuess>dNumber)
+                {
+                    document.getElementById("out2").innerHTML = "Lower";
+                }
+            if (numGuess==dNumber)
+                {
+                    document.getElementById("out2").innerHTML = "Yay you guessed it!";
+                }
+            if (numGuess<dNumber)
+                {
+                    document.getElementById("out2").innerHTML = "Higher";
+                }
+        }
+    </script>
 
 </body>
 </html>

@@ -25,7 +25,8 @@ function give_station(num)
             console.log('abs - cbn - 2')
             break
         case 5:
-            console.log('tv5 - 5')
+            first_letter = "t"
+            console.log('${first_letter}v5 - 5')
             break
         case 13:
             console.log('ibc - 13')

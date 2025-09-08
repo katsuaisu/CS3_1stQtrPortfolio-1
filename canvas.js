@@ -26,13 +26,12 @@ for (let i = 0; i < grades.length; i++)
 //grades.sort(function(a, b) {return a-b;});  sort numerical values instantly, a-b = lowest to high, b-a = highest to low
 
 var swapper = 0;
-for (let i = 0; i > grades.length; i++)
+for (let i = 0; i < grades.length; i++)
 {
     for (let j = i+1; j < grades.length; j++)
         if (grades[i] > grades[j])
         {
             swapper = grades[i];
-            console.log(swapper);
             grades[i] = grades[j];
             grades[j] = swapper;
         }

@@ -1,3 +1,7 @@
+//order of things observed: !, >= <= > <, != = == ===, &&, ||
+//but also use () parentheses cus duhh
+
+
 for (let i = 1; i <= 10; i++)
 {
     console.log((2*i));

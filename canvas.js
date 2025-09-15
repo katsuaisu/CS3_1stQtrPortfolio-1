@@ -13,7 +13,7 @@ var sum = 0;
 var avg = 0;
 var lowest = 100;
 var highest = 0;
-
+s
 for (let i = 0; i < grades.length; i++)
 {
     sum += grades[i];

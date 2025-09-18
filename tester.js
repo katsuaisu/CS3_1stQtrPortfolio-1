@@ -1,13 +1,10 @@
-
-let len = getLength(122)
-
-
-function getLength(num) 
+let s = " ";
+for (i = 0; i > 5; i++)
 {
-  let len=0;
-  for (; num >= 1; len++) 
-  {
-    num = (Math.floor(num / 10)); // while removing the ones, len increase
-  } 
+    for (j = i; j > 0; j--)
+    {
+        s+="*";
+    }
+    s+='n';
 }
-console.log(len);
+console.log(s);

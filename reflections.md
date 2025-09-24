@@ -60,6 +60,10 @@ switch (pastry)
 ```
 
 ### 4. Loops and their Variations
-### 5. A Few Built in Functions and Fun Code Shortcuts
 
+Sometimes, we would want to do certain actions multiple times in a row. These could be printing out asterisks to create a shape or splitting a number into its prime factors. Here is where we would use loops, which repeat certain instructions for a certain number of iterations. There are 3 main types, While, For and do While loops. While loops are used typically when the amount of iterations are unknown, For loops are for when the amount if iterations *are* known, and do While loops are quite similar to While loops, but they will check their conditional after performing the main loop body at least once.
+
+### 5. A Few Built in Functions and Code Tricks / Shortcuts
+
+And with the guidance of Sir Roy's teachings, I have also learned that there are quite a few ways to shorten my code using built-in functions and little formatting tricks. For example, going back to Switch statements, if you want multiple values to have the same output, you can just do what I did earlier, with how the cases line up to just 1 output. Another example would be the usage of the Math.floor() built-in function in JavaScript, which truncates the decimal part of a variable. And with that, other than standard things like learning how the other bits of your code in JavaScript, I think that covers most of the important things I learned this quarter.
 

@@ -15,14 +15,48 @@ Of course, without any operations to do on your variables, they would be next to
 
 And with an understanding of variables and different operations, we can now create programs that can "make decisions" on their own. These are where the If, Else, If Else and Switch control structures. For example, *if* I wanted to insult my Strontium classmates that are older than me, I could use an If statement like this:
 
-```
+```javascript
 let section = "Strontium";
 let age = 16;               //These are example values
 
 if (section == "Strontium" && age > 15)
 {
     console.log("Haha you are old haha haha");
+}                          
+                            //In this case, the If statement would evaluate as true and output the weird line
+```
+
+I could also use a Switch statement for, say, judging based on favourite pastry, like so:
+
+```javascript
+let pastry = "turnover";
+
+switch (pastry)
+{
+    case "cream puff":
+    case "turon":
+    case "croissant":
+    {
+        console.log("I respect that.");
+        break;
+    }
+    case "pie":
+    case "cinnamon roll":
+    {
+        console.log("Woah, you're awesome!");
+        break;
+    }
+    case "apple pie":
+    {
+        console.log("Can we be besties for ever and ever and ever?!?!?");
+        break;
+    }
+    default:
+    {
+        console.log("Dunno what that is whoops.");
+    }
 }
+                            //Here, it would output "Woah, you're awesome!"
 ```
 
 ### 4. Loops and their Variations

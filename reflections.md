@@ -1,5 +1,3 @@
- *List and describe at least 5 topics that we discussed in class that you know very well. Each description should be at least 1 paragraph with three to five sentences.*
-
 # **Hello! Good day to you nosy peeps!**
 *This quarter, I both refreshed my knowledge on fundamental things in coding and learned new things in a different coding language.*
 

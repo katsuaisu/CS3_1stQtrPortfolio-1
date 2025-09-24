@@ -11,9 +11,21 @@ As with almost any programming language, variables are a must have in doing anyt
 
 Of course, without any operations to do on your variables, they would be next to useless. There aren't really many changes with how arithmetic and comparison operations worked in C++, which we learned last year, and JavaScript. A newly introduced comparison operation is ===, which compares both the value stored in a variable and the data type. And, as mentioned before, you can mix data types in arithmetic and comparison operations, and JavaScript doesn't really care too much.
 
-### 3. A Few Built in Functions and Fun Code Shortcuts
-### 4. Conditional Control Structures
-### 5. Loops and their Variations
+### 3. Conditional Control Structures
 
+And with an understanding of variables and different operations, we can now create programs that can "make decisions" on their own. These are where the If, Else, If Else and Switch control structures. For example, *if* I wanted to insult my Strontium classmates that are older than me, I could use an If statement like this:
+
+```
+let section = "Strontium";
+let age = 16;               //These are example values
+
+if (section == "Strontium" && age > 15)
+{
+    console.log("Haha you are old haha haha");
+}
+```
+
+### 4. Loops and their Variations
+### 5. A Few Built in Functions and Fun Code Shortcuts
 
 
